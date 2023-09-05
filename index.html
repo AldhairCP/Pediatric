@@ -1,0 +1,1007 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+    <title>Pediatric Triage System Tlaxcala</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <div class="card">
+
+        <div class="encabezado">
+
+            <img src="img/tlaxcala.jpeg" width=220 height=100>
+            <img src="img/sesa.jpeg" width=220 height=100>
+
+
+            <img src="img/hospital.jpeg" width=220 height=100>
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="form-group">
+
+                        <label>Expediente: </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>HOSPITAL INFANTIL DE TLAXCALA</h2>
+        <h1>División de Medicina Crítica</h1>
+        <h1>Departamento de urgencias</h1>
+        <h2>"HOJA DE VALORACION INICIAL"</h2>
+        <h1>Pediatric Triage System Tlaxcala</h1>
+        <br>
+        <br>
+        <!--seccion 1-->
+        <form method="post" action="datos.php">
+            <div id="seccion1" class="seccion" style="display: block;">
+                <!-- <form method="post" action="datos2.php"> -->
+                <fieldset id="seccion1">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Num: </label>
+                                <input type="number" name="num"><br><br>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Fecha: </label>
+                                <input type="date" name="fecha"><br><br>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Hora de llegada: </label>
+                                <input type="time" name="HoraLlegada"><br><br>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Hora de atención: </label>
+                                <input type="time" name="HoraAtencion"><br><br>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Nombre: </label>
+                                <input type="text" name="nombre" style="width: 700px;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Fecha de nacimiento: </label>
+                                <input type="date" name="fecha_nacimiento"><br><br>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label>CURP: </label>
+                                <input type="text" name="curp" style="width: 700px;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Edad: </label>
+                                <input type="number" name="edad">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Municipio: </label>
+                                <input type="text" name="municipio" style="width: 700px;">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Estado: </label>
+                                <input type="text" name="estado">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <!-- ????????????? -->
+                    <div class="col">
+                        <div class="form-group">
+                            <fieldset class="ftam">
+                                <label>Sexo: </label>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="radio" name="sexo" value="1" style="width: 70px; height: 20px;">
+                                        <label>Hombre </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="radio" name="sexo" value="2" style="width: 70px; height: 20px;">
+                                        <label>Mujer </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <!-- ????????????? -->
+                    <br>
+                    <br>
+                    <div class="col">
+                        <div class="form-group">
+                            <fieldset class="ftam">
+                                <label>Procedencia: </label>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="radio" name="procedencia_fija" value="1"
+                                            style="width: 70px; height: 20px;">
+                                        <label>Domicilio</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="radio" name="procedencia_fija" value="2"
+                                            style="width: 70px; height: 20px;">
+                                        <label>Consulta Externa</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="radio" name="procedencia_fija" value="3"
+                                            style="width: 70px; height: 20px;">
+                                        <label>1er. Nivel</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="radio" name="procedencia_fija" value="4"
+                                            style="width: 70px; height: 20px;">
+                                        <label>2do. Nivel</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="radio" name="procedencia_otro" value="5"
+                                            style="width: 70px; height: 20px;">
+                                        <label>Otros: </label>
+                                        <input type="textarea" style="width: 700px; height: 100px;">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!-- <input type="submit" value="Guardarrrrr"> -->
+                </fieldset>
+                <!-- </form> -->
+                <!-- aqui ya quedo la primera parte padre muy muyyy facil asi es  -->
+                <br>
+                <br>
+
+                <!-- <form method="post" action="data.php"> -->
+                <div class="col">
+                    <div class="form-group">
+                        <fieldset class="color">
+                            <label>Motivo de la consulta por factores de riesgo: </label>
+
+                            <br>
+                            <br>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="checkbox" name="MotivoConsultaFactorRiesgo" value="1"
+                                        style="width: 70px; height: 20px;">
+                                    <label>Edad: Recién Nacidos y Menor de 3 meses con Fiebre o rechazo a la vía oral
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="checkbox" name="MotivoConsultaFactorRiesgo" value="2"
+                                        style="width: 70px; height: 20px;">
+                                    <label>Intoxicados o Sospecha de ingesta de tóxico </label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="checkbox" name="MotivoConsultaFactorRiesgo" value="3"
+                                        style="width: 70px; height: 20px;">
+                                    <label>Ingesta cuerpo extraño </label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="checkbox" name="MotivoConsultaFactorRiesgo" value="4"
+                                        style="width: 70px; height: 20px;">
+                                    <label>Reingresa en menos de 72 horas </label>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="checkbox" name="factores" value="5" style="width: 70px; height: 20px;">
+                                    <label>Inmunocomprometidos: </label>
+
+                                    <fieldset style="width: 950px;">
+
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="checkbox" name="Inmunocomprometidos" value="1"
+                                                    style="width: 70px; height: 20px;">
+                                                <label>Paciente con cáncer </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="checkbox" name="Inmunocomprometidos" value="2"
+                                                    style="width: 70px; height: 20px;">
+                                                <label>Trasplantados </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="checkbox" name="Inmunocomprometidos" value="3"
+                                                    style="width: 70px; height: 20px;">
+                                                <label>Desnutridos </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="checkbox" name="Inmunodeficiencias" value="4"
+                                                    style="width: 70px; height: 20px;">
+                                                <label>Inmunodeficiencias: </label>
+                                                <input type="textarea" style="width: 700px; height: 100px;">
+                                            </div>
+                                        </div>
+
+                                    </fieldset style="width: 950px;">
+
+                                    <br>
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="checkbox" name="DolorAgudo" value="6"
+                                                style="width: 70px; height: 20px;">
+                                            <label>Dolor agudo: </label>
+
+                                            <fieldset style="width: 950px;">
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="DolorAgudo" value="1"
+                                                            style="width: 70px; height: 20px;">
+                                                        <label>7 - 10 </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="DolorAgudo" value="2"
+                                                            style="width: 70px; height: 20px;">
+                                                        <label>5 - 6 (Wong-Baker) </label>
+                                                    </div>
+                                                </div>
+
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="checkbox" name="factores" value="7"
+                                                style="width: 70px; height: 20px;">
+                                            <label>Enfermedades de Base: </label>
+
+                                            <fieldset style="width: 950px;">
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="EnfermedadesBase" value="1"
+                                                            style="width: 70px; height: 20px;">
+                                                        <label>Cardiopatías </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="EnfermedadesBase" value="2"
+                                                            style="width: 70px; height: 20px;">
+                                                        <label>Displasia Broncopulmonar </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="EnfermedadesBase" value="3"
+                                                            style="width: 70px; height: 20px;">
+                                                        <label>Neumopatía crónica </label>
+                                                    </div>
+                                                </div>
+
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="checkbox" name="HemorragiaNoTraumatica" value="8"
+                                                style="width: 70px; height: 20px;">
+                                            <label>Hemorragia NO Traumática (Tubo digestivo/Epistaxis) </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="checkbox" name="RN7DiasIctericia" value="9"
+                                                style="width: 70px; height: 20Fpx;">
+                                            <label>RN < 7 días ictericia Kramer III </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+
+                                                <label>Clasificación especial: </label>
+                                                <select name='ClasificacionEspecial' id='typeOptions' class="selTam"
+                                                    style="background-color: rgb(255, 255, 255);">
+                                                    <option value='' disabled>---Seleccione una opción ---</option>
+                                                    <option value='1'>Código 25</option>
+                                                    <option value='2'>Código 100</option>
+                                                    <option value='3'>Sx kempe</option>
+                                                    <option value='4'>Hora Dorada</option>
+                                                    <option value='5'>Código SEPSIS</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                    </div>
+                </div>
+                <!-- <input type="submit" value="Guardarrrrr"> -->
+                <!-- </form> -->
+
+                <br>
+                <br>
+                <pre>
+                <strong>
+
+            </strong>
+            </pre>
+                <!-- <form method="post" action="dolor.php"> -->
+                <fieldset style="position: relative;" class="centrado">
+                    <h1>Escala de dolor</h1>
+                    <br>
+                    <img src="img/escala.jpeg">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Opción seleccionada:</label>
+
+                                <input type="range" min="0" max="10" step="1" name="Barra1" id="slider"
+                                    style="width: 350px;">
+                                <label for="slider" id="value"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h1>Escala de caras de Wong-Baker</h1>
+                    <br>
+                    <img src="img/caras.jpeg">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Opción seleccionada:</label>
+
+                                <input type="range" min="0" max="5" step="1" name="Barra2" id="slider"
+                                    style="width: 350px;">
+                                <label for="slider" id="value"></label>
+
+                                <script>
+                                    const slider = document.getElementById('slider');
+                                    const valueLabel = document.getElementById('value');
+
+                                    slider.addEventListener('input', function () {
+                                        const selectedValue = slider.value;
+                                        valueLabel.textContent = selectedValue;
+                                    });
+                                </script>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- <input type="submit" value="Guardarrrrr"> -->
+
+                </fieldset>
+                <!-- </form> -->
+
+
+                <button id="boton-siguiente-1" class="boton-siguiente">Siguiente sección</button>
+
+            </div>
+
+            <br>
+            <br>
+
+            <!--Seccion 2-->
+            <div id="seccion2" class="seccion">
+
+                <!-- <form method="post" action="indicadores.php"> -->
+                <fieldset>
+                    <table class="default">
+
+                        <h1>Tabla de indicadores </h1>
+
+                        <tr>
+
+                            <th scope="row"></th>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>APARIENCIA:</th>
+
+                            <td>Crisis<br>convulsivas</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Crisis convulsivas" id="cbox"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                            <td>Incapacidad para<br>deambular</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Incapacidad para deambular" id="cbox">
+                            </td>
+
+                            <td>Palidez</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Palidez" id="cbox">
+                            </td>
+
+                            <td>Llanto extraño<br>a los padres</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Llanto extraño" id="cbox">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th></th>
+
+                            <td>Somnolencia</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Somnolencia" id="cbox"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                            <td>Irritabilidad /<br>Llanto intenso</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Irritabilidad" id="cbox">
+                            </td>
+
+                            <td>Petequias /<br>Equimosis</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Petequias Equimosis" id="cbox"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                            <td>Movimientos<br>anormales</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Movimientos anormales" id="cbox"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th></th>
+
+                            <td>Cianosis</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Cianosis" id="cbox"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                            <td>No reconoce a<br>padres</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="No reconoce a padres" id="cbox">
+                            </td>
+
+                            <td>Piel marmórea</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Pieñ marmórea" id="cbox"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                            <td>Falta de respuesta<br>a estímulos</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Apariencia" value="Falta de respuesta a estímulos"
+                                    id="cbox" onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>RESPIRATORIO:</th>
+
+                            <td>Polipnea</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Respiratorio" id="cbox" value="Polipnea">
+                            </td>
+
+                            <td>Estridor</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Respiratorio" id="cbox" value="Estridor">
+                            </td>
+
+                            <td>Bradipnea</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Respiratorio" id="cbox" value="Bradipnea"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                            <td>Sibilancias</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Respiratorio" id="cbox" value="Sibilancias">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th></th>
+
+                            <td>Retracciones</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Respiratorio" id="cbox" value="Retracciones">
+                            </td>
+
+                            <td>Tiraje intercostal</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Respiratorio" id="cbox" value="Tiraje intercostal">
+                            </td>
+
+                            <td>Respiracion<br>jadeante</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Respiratorio" id="cbox" value="Respiracion jadeante"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>HIDRATACIÓN:</th>
+
+                            <td>Diarrea</td>
+                            <td style="background-color: green;" class="tds">
+                                <input type="checkbox" name="Hidratacion" id="cbox" value="Diarrea">
+                            </td>
+
+                            <td>Vómitos</td>
+                            <td style="background-color: green;" class="tds">
+                                <input type="checkbox" name="Hidratacion" id="cbox" value="Vómitos">
+                            </td>
+
+                            <td>Rechazo a alimentarse</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Hidratacion" id="cbox" value="Rechazo a alimentarse">
+                            </td>
+
+                            <td>Mucosas secas</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Hidratacion" id="cbox" value="Mucosas secas">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>TEMPERATURA:<br>(Marcar 1 ítem)</th>
+
+                            <td>Fiebre</td>
+                            <td style="background-color: green;" class="tds">
+                                <input type="checkbox" name="Temperatura" id="cbox" value="Fiebre">
+                            </td>
+
+                            <td>Hipotermia</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Temperatura" id="cbox" value="Hipotermia">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>INMUNOLÓGICO:<br>(Marcar 1 ítem)</th>
+
+                            <td>Desnutrición y<br>sospecha<br>Infecciosa</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Inmunologico" id="cbox"
+                                    value="Desnutrición y sospecha Infecciosa ">
+                            </td>
+
+                            <td>Oncológico</td>
+                            <td style="background-color: green;" class="tds">
+                                <input type="checkbox" name="Inmunologico" id="cbox" value="Oncológico">
+                            </td>
+
+                            <td>
+                                < 3 meses y<br>fiebre
+                            </td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Inmunologico" id="cbox" value="< 3 meses y
+                                fiebre">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>CIRCULACIÓN:</th>
+
+                            <td>Pulsos débiles</td>
+                            <td style="background-color: green;" class="tds">
+                                <input type="checkbox" name="Circulacion" id="cbox" value="Pulsos débiles">
+                            </td>
+
+                            <td>Piel fria</td>
+                            <td style="background-color: green;" class="tds">
+                                <input type="checkbox" name="Circulacion" id="cbox" value="Piel fria">
+                            </td>
+
+                            <td>Taquicardia</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Circulacion" id="cbox" value="Taquicardia"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                            <td>Llenado capilar retrasado</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Circulacion" id="cbox" value="Llenado capilar retrasado"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>TRAUMA:</th>
+
+                            <td>TCE Menor con<br>alteración<br>alineurologica</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Trauma" id="cbox" value="TCE Menor con
+                                alteración
+                                alineurologica">
+                            </td>
+
+                            <td>Contusión y<br>deformidad<br>(Fractura)</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Trauma" id="cbox" value="Contusión y
+                                deformidad
+                                (Fractura)">
+                            </td>
+
+                            <td>Herida abierta<br>Necesidad de<br>sutura</td>
+                            <td style="background-color: yellow;" class="tds">
+                                <input type="checkbox" name="Trauma" id="cbox" value="Herida abierta
+                                Necesidad de
+                                sutura">
+                            </td>
+
+                            <td>Politraumatizado</td>
+                            <td style="background-color: red;" class="tds">
+                                <input type="checkbox" name="Trauma" id="cbox" value="Politraumatizado"
+                                    onclick="alert('El paciente debe ser atendido de inmediato')">
+                            </td>
+
+                        </tr>
+
+                    </table>
+                    <!-- <input type="submit" value="Guardar"> -->
+                </fieldset>
+                <!-- </form> -->
+
+                <button id="boton-siguiente-2" class="boton-siguiente">Siguiente sección</button>
+
+            </div>
+
+            <br>
+            <br>
+
+            <div id="seccion3" class="seccion">
+
+                <!-- <form method="post" action="conexiondiaggnostico.php"> -->
+                <fieldset>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Diagnóstico probable: </label>
+                                <input type="text" style="width: 700px;" name="DiagnosticoProbable"><br><br>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Peso: </label>
+                                <input type="text" style="width: 200px;" name="Peso"><br><br>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label>FC: </label>
+                                <input type="text" style="width: 200px;" name="FC"><br><br>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label>FR: </label>
+                                <input type="text" style="width: 200px;" name="FR"><br><br>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Temp: </label>
+                                <input type="text" style="width:200px;" name="Temp"><br><br>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label>SatO2: </label>
+                                <input type="text" style="width:200px;" name="SatO2"><br><br>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <fieldset>
+                        <p>REFERIDO A: </p>
+
+                        <div class="row">
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label>Sala choque: </label>
+                                    <input type="text" style="width:200px;" name="SalaChoque"><br><br>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label>Observación: </label>
+                                    <input type="text" style="width:200px;" name="Observacion"><br><br>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label>C. Externa: </label>
+                                    <input type="text" style="width:200px;" name="CExterna"><br><br>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label>C. Salud: </label>
+                                    <input type="text" style="width:200px;" name="CSalud"><br><br>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label>2° Nivel: </label>
+                                    <input type="text" name="SegundoNivel" style="width:200px;"><br><br>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label>Domicilio: </label>
+                                    <input type="text" name="Domicilio" style="width:200px;"><br><br>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    </fieldset>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Nombre del Médico: </label>
+                                <input type="text" style="width: 700px;" name="NombreMedico"><br><br>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+
+                        <label></label>
+                        <label></label>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Cedula Profesional: </label>
+                                <input type="text" name="CedulaProfesional"><br><br>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Firma: </label>
+                                <input type="text" style="width:200px;">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <!-- <input type="submit" value="Guardarrrrr"> -->
+                </fieldset>
+                <!-- </form> -->
+
+                <button id="boton-siguiente-3" class="boton-siguiente">Finalizar registro</button>
+
+            </div>
+
+            <div class="row">
+
+                <label></label>
+                <label></label>
+                <label></label>
+
+                <div class="col">
+                    <input type="submit" value="Guardar">
+                </div>
+
+            </div>
+        </form>
+
+        <div>
+
+            <button class="boton-imprimir" onclick="window.print()">Imprimir</button>
+
+
+        </div>
+
+    </div>
+    <script>
+        var botonesSiguiente = document.querySelectorAll(".boton-siguiente");
+        var secciones = document.querySelectorAll(".seccion");
+        var seccionActual = 0;
+        // Ocultar todas las secciones excepto la primera
+        //for (var i = 1; i < secciones.length; i++) {
+        //secciones[i].style.display = "none";
+        //}
+        // Función para ir a la siguiente sección
+        function irASiguienteSeccion() {
+            // Ocultar la sección actual
+            secciones[seccionActual].style.display = "none";
+            // Mostrar la siguiente sección
+            seccionActual++;
+            /*if (seccionActual >= secciones.length) {
+            seccionActual = 3;
+            }*/
+            secciones[seccionActual].style.display = "block";
+        }
+        // Asignar la función al evento "click" de los botones
+        for (var i = 0; i < botonesSiguiente.length; i++) {
+            botonesSiguiente[i].addEventListener("click", irASiguienteSeccion);
+        }
+    </script>
+
+</body>
+
+</html>
